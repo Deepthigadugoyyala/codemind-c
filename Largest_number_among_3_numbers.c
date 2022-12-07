@@ -1,12 +1,12 @@
 #include<stdio.h>
-int l(int a,int b,int c);
+void l(int a,int b,int c);
 int main()
 {
     int a,b,c;
     scanf("%d%d%d",&a,&b,&c);
-    int x=l(a,b,c);
+    l(a,b,c);
 }
-int l(int a,int b,int c)
+void l(int a,int b,int c)
 {
     if(a>b)
     {
@@ -20,5 +20,4 @@ int l(int a,int b,int c)
    {
        printf("%d",c);
    }
-   return 0;
 }
