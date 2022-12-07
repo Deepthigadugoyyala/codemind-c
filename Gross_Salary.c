@@ -1,12 +1,12 @@
 #include<stdio.h>
-int gross(int b,int DA,int HRA);
+void gross(int b,int DA,int HRA);
 int main()
 {
     int b,DA,HRA;
     scanf("%d",&b);
-    int x=gross(b,DA,HRA);
+    gross(b,DA,HRA);
 }
-int gross(int b,int DA,int HRA)
+void gross(int b,int DA,int HRA)
 {
     float gr;
      if(b<=10000)
@@ -22,5 +22,4 @@ int gross(int b,int DA,int HRA)
         gr=b+(0.95*b)+(0.30*b);
     }
     printf("%0.2f",gr);
-    return 0;
 }
