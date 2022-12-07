@@ -1,12 +1,12 @@
 #include<stdio.h>
-int ar(int r);
+void ar(int r);
 int main()
 {
     int r;
     scanf("%d",&r);
-    int x=ar(r);
+    ar(r);
 }
-int ar(int r)
+void ar(int r)
 {
     float area,per;
     area=3.14*r*r;
@@ -14,5 +14,4 @@ int ar(int r)
     printf("%0.2f
 ",area);
     printf("%0.2f",per);
-    return 0;
 }
