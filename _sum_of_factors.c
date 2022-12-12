@@ -1,12 +1,12 @@
 #include<stdio.h>
-int fac(int n,int i,int s);
+void fac(int n,int i,int s);
 int main()
 {
     int n,i,s=0;
     scanf("%d",&n);
-    int x=fac(n,i,s);
+    fac(n,i,s);
 }
-int fac(int n,int i,int s)
+void fac(int n,int i,int s)
 {
     for(i=1;i<n;i++)
     {
@@ -16,5 +16,4 @@ int fac(int n,int i,int s)
         }
     }
     printf("%d ",s);
-    return 0;
 }
