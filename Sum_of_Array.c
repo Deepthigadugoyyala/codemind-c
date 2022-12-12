@@ -1,9 +1,14 @@
 #include<stdio.h>
+void ar(int n,int sum);
 int main()
 {
-    int n,i,sum=0;
+    int n,sum=0;
     scanf("%d",&n);
-    int x[n];
+    ar(n,sum);
+}
+void ar(int n,int sum)
+{
+    int x[n],i;
     for(i=0;i<n;i++)
     {
         scanf("%d",&x[i]);
