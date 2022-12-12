@@ -1,12 +1,12 @@
 #include<stdio.h>
-int patt(int i,int j,int n);
+void patt(int i,int j,int n);
 int main()
 {
     int i,j,n;
     scanf("%d",&n);
-    int x=patt(i,j,n);
+    patt(i,j,n);
 }
-int patt(int i,int j,int n)
+void patt(int i,int j,int n)
 {
     for(i=1;i<=n;i++)
     {
@@ -17,5 +17,4 @@ int patt(int i,int j,int n)
         printf("
 ");
     }
-    return 0;
 }
