@@ -1,12 +1,12 @@
 #include<stdio.h>
-int arr(int n,int i,int max);
+void arr(int n,int i,int max);
 int main()
 {
     int n,i,max;
     scanf("%d",&n);
-    int X=arr(n,i,max);
+    arr(n,i,max);
 }
-int arr(int n,int i,int max)
+void arr(int n,int i,int max)
 {
     int x[n];
     for(i=0;i<n;i++)
@@ -18,5 +18,4 @@ int arr(int n,int i,int max)
         max=x[i];
     }
     printf("%d",max);
-    return 0;
 }
