@@ -1,12 +1,12 @@
 #include<stdio.h>
-int ar(int n,int even);
+void ar(int n,int even);
 int main()
 {
     int n,even=0;
     scanf("%d",&n);
-    int a=ar(n,even);
+    ar(n,even);
 }
-int ar(int n,int even)
+void ar(int n,int even)
 {
     int x[n],i;
     for(i=0;i<n;i++)
@@ -19,5 +19,4 @@ int ar(int n,int even)
         even=even+x[i];
     }
     printf("%d",even);
-    return 0;
 }
