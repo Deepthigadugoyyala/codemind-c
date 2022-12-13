@@ -1,12 +1,12 @@
 #include<stdio.h>
-int arr(int n,int s);
+void arr(int n,int s);
 int main()
 {
     int n,s=0;
     scanf("%d",&n);
-    int x=arr(n,s);
+    arr(n,s);
 }
-int arr(int n,int s)
+void arr(int n,int s)
 {
     int x[n],i;
     for(i=0;i<n;i++)
@@ -19,5 +19,4 @@ int arr(int n,int s)
         s=s+x[i];
     }
     printf("%d",s);
-    return 0;
 }
