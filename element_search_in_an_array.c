@@ -1,8 +1,13 @@
 #include<stdio.h>
+int arr(int n,int k);
 int main()
 {
     int n,k=0;
     scanf("%d",&n);
+    int x=arr(n,k);
+}
+int arr(int n,int k)
+{
     int x[n];
     for(int i=0;i<n;i++)
     {
@@ -23,4 +28,5 @@ int main()
     {
         printf("False");
     }
+    return 0;
 }
