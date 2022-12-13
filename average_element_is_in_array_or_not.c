@@ -1,12 +1,12 @@
 #include<stdio.h>
-int arr(int n,int s,int k);
+void arr(int n,int s,int k);
 int main()
 {
     int n,s=0,k=0;
     scanf("%d",&n);
-    int x=arr(n,s,k);
+    arr(n,s,k);
 }
-int arr(int n,int s,int k)
+void arr(int n,int s,int k)
 {
     int x[n],avg;
     for(int i=0;i<n;i++)
@@ -31,5 +31,4 @@ int arr(int n,int s,int k)
     {
         printf("False");
     }
-    return 0;
 }
