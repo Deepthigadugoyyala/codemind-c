@@ -1,12 +1,12 @@
 #include<stdio.h>
-int arr(int n,int i,int s);
+void arr(int n,int i,int s);
 int main()
 {
     int n,i,s=0;
     scanf("%d",&n);
-    int x=arr(n,i,s);
+    arr(n,i,s);
 }
-int arr(int n,int i,int s)
+void arr(int n,int i,int s)
 {
     float avg;
     int x[n];
@@ -20,5 +20,4 @@ int arr(int n,int i,int s)
     }
     avg=(float)s/n;
     printf("%0.2f",avg);
-    return 0;
 }
