@@ -1,9 +1,14 @@
 #include<stdio.h>
+int arr(int n,int i,int s);
 int main()
 {
     int n,i,s=0;
-    float avg;
     scanf("%d",&n);
+    int x=arr(n,i,s);
+}
+int arr(int n,int i,int s)
+{
+    float avg;
     int x[n];
     for(i=0;i<n;i++)
     {
@@ -15,4 +20,5 @@ int main()
     }
     avg=(float)s/n;
     printf("%0.2f",avg);
+    return 0;
 }
