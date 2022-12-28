@@ -1,8 +1,13 @@
 #include<stdio.h>
+int med(int n,int i,int j);
 int main()
 {
 	int n,i,j;
 	scanf("%d",&n);
+	int x=med(n,i,j);
+}
+int med(int n,int i,int j)
+{
 	int x[n];
 	int k;
 	for(k=0;k<n;k++)
@@ -22,5 +27,6 @@ int main()
 			}
 		}
 	}
-	printf("%d",x[n/2]);	
+	printf("%d",x[n/2]);
+	return 0;
 }
