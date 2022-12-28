@@ -1,8 +1,13 @@
 #include<stdio.h>
+int nf(int a,int b,int c,int n);
 int main()
 {
     int a=0,b=1,c=0,n;
     scanf("%d",&n);
+    int x=nf(a,b,c,n);
+}
+int nf(int a,int b,int c,int n)
+{
     while(n>c)
     {
         c=a+b;
@@ -21,4 +26,5 @@ int main()
     {
         printf("%d ",b);
     }
+    return 0;
 }
