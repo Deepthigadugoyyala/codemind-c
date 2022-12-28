@@ -1,8 +1,13 @@
 #include<stdio.h>
+int adam(int n);
 int main()
 {
     int n;
     scanf("%d",&n);
+    int x=adam(n);
+}
+int adam(int n)
+{
     int sq=n*n;
     int rev=0;
     while(n>0)
@@ -27,4 +32,5 @@ int main()
     {
         printf("False");
     }
+    return 0;
 }
