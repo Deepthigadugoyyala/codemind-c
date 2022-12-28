@@ -1,13 +1,8 @@
 #include<stdio.h>
-void c(int units,int uc);
 int main()
 {
     int units,uc=0;
     scanf("%d",&units);
-    c(units,uc);
-}
-void c(int units,int uc)
-{
     float bill,sr,tb;
     if (units<200)
     {
