@@ -1,12 +1,12 @@
 #include<stdio.h>
-int med(int n,int i,int j);
+void med(int n,int i,int j);
 int main()
 {
 	int n,i,j;
 	scanf("%d",&n);
-	int x=med(n,i,j);
+	med(n,i,j);
 }
-int med(int n,int i,int j)
+void med(int n,int i,int j)
 {
 	int x[n];
 	int k;
@@ -28,5 +28,4 @@ int med(int n,int i,int j)
 		}
 	}
 	printf("%d",x[n/2]);
-	return 0;
 }
