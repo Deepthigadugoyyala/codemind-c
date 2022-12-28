@@ -1,12 +1,12 @@
 #include<stdio.h>
-int diamond(int n,int i,int j);
+void diamond(int n,int i,int j);
 int main()
 {
 	int n,i,j;
 	scanf("%d",&n);
-	int x=diamond(n,i,j);
+	diamond(n,i,j);
 }
-int diamond(int n,int i,int j)
+void diamond(int n,int i,int j)
 {
 	if(n<3)
 	{
@@ -33,5 +33,4 @@ int diamond(int n,int i,int j)
 ");
 		}
 	}
-	return 0;
 }
