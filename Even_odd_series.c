@@ -1,13 +1,13 @@
 #include<stdio.h>
 #include<math.h>
-int EO(int n);
+void EO(int n);
 int main()
 {
     int n;
     scanf("%d",&n);
-    int x=EO(n);
+    EO(n);
 }
-int EO(int n)
+void EO(int n)
 {
     int a,b,k1=0,k2=1;
     for(int i=1;i<=n+1;i++)
@@ -25,5 +25,4 @@ int EO(int n)
             k2++;  
         }
     }
-    return 0;
 }
