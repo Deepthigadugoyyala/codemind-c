@@ -1,12 +1,12 @@
 #include<stdio.h>
-int tour(int t,int n,int m);
+void tour(int t,int n,int m);
 int main()
 {
     int t,n,m;
     scanf("%d",&t);
-    int x=tour(t,n,m);
+    tour(t,n,m);
 }
-int tour(int t,int n,int m)
+void tour(int t,int n,int m)
 {
     while(t)
     {
@@ -15,5 +15,4 @@ int tour(int t,int n,int m)
 ",n*5+m*7);
         t--;
     }
-    return 0;
 }
