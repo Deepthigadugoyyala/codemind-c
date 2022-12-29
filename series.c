@@ -1,14 +1,14 @@
 #include<stdio.h>
 #include<math.h>
-int series(int n);
+void series(int n);
 int main()
 {
     int n;
     scanf("%d",&n);
     printf("0 ");
-    int x=series(n);
+    series(n);
 }
-int series(int n)
+void series(int n)
 {
     int a,b,i,k1=0,k2=0;
     for(i=0;i<=n-2;i++)
@@ -26,5 +26,4 @@ int series(int n)
             k2++;
         }
     }
-    return 0;
 }
