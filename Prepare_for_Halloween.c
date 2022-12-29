@@ -1,9 +1,15 @@
 #include<stdio.h>
+int hal(int t);
 int main()
 {
-    int t,x,y;
+    int t;
     scanf("%d
 ",&t);
+    int X=hal(t);
+}
+int hal(int t)
+{
+    int x,y;
     while(t)
     {
         scanf("%d %d",&x,&y);
@@ -24,4 +30,5 @@ int main()
         }
         t--;
     }
+    return 0;
 }
