@@ -1,13 +1,13 @@
 #include<stdio.h>
-int hal(int t);
+void hal(int t);
 int main()
 {
     int t;
     scanf("%d
 ",&t);
-    int X=hal(t);
+    hal(t);
 }
-int hal(int t)
+void hal(int t)
 {
     int x,y;
     while(t)
@@ -30,5 +30,4 @@ int hal(int t)
         }
         t--;
     }
-    return 0;
 }
