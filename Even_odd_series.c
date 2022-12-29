@@ -1,9 +1,15 @@
 #include<stdio.h>
 #include<math.h>
+int EO(int n);
 int main()
 {
-    int n,a,b,k1=0,k2=1;
+    int n;
     scanf("%d",&n);
+    int x=EO(n);
+}
+int EO(int n)
+{
+    int a,b,k1=0,k2=1;
     for(int i=1;i<=n+1;i++)
     {
         if(i%2==0)
@@ -19,4 +25,5 @@ int main()
             k2++;  
         }
     }
+    return 0;
 }
