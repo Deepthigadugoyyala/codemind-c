@@ -1,8 +1,14 @@
 #include<stdio.h>
+int sub(int t);
 int main()
 {
-    int t,n,x;
+    int t;
     scanf("%d",&t);
+    int X=sub(t);
+}
+int sub(int t)
+{
+    int n,x;
     while(t)
     {
         scanf("%d",&x);
@@ -18,4 +24,5 @@ int main()
         }
         t--;
     }
+    return 0;
 }
