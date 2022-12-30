@@ -1,8 +1,13 @@
 #include<stdio.h>
+void RG(int t,int x);
 int main()
 {
     int t,x;
     scanf("%d",&t);
+    RG(t,x);
+}
+void RG(int t,int x)
+{
     while(t)
     {
         scanf("%d",&x);
