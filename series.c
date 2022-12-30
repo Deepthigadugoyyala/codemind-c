@@ -1,8 +1,14 @@
 #include<stdio.h>
+int series(int n);
 int main()
 {
-    int n,a=0,b=0;
+    int n;
     scanf("%d",&n);
+    int X=series(n);
+}
+int series(int n)
+{
+    int a=0,b=0;
     for(int i=1;i<=n+1;i++)
     {
         if(i%2==0)
@@ -16,4 +22,5 @@ int main()
             printf("%d ",b);
         }
     }
+    return 0;
 }
