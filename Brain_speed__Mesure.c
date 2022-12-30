@@ -1,12 +1,12 @@
 #include<stdio.h>
-int bsm(int x,int y);
+void bsm(int x,int y);
 int main()
 {
     int x,y;
     scanf("%d%d",&x,&y);
-    int X=bsm(x,y);
+    bsm(x,y);
 }
-int bsm(int x,int y)
+void bsm(int x,int y)
 {
     if(x<y)
     {
@@ -16,5 +16,4 @@ int bsm(int x,int y)
     {
         printf("NO");
     }
-    return 0;
 }
