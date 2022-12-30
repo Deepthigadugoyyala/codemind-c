@@ -1,12 +1,12 @@
 #include<stdio.h>
-int series(int n);
+void series(int n);
 int main()
 {
     int n;
     scanf("%d",&n);
-    int X=series(n);
+    series(n);
 }
-int series(int n)
+void series(int n)
 {
     int a=0,b=0;
     for(int i=1;i<=n+1;i++)
@@ -22,5 +22,4 @@ int series(int n)
             printf("%d ",b);
         }
     }
-    return 0;
 }
