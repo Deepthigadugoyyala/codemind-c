@@ -1,23 +1,21 @@
 #include<stdio.h>
-int palin(int n,int r,int rev,int s);
 int main()
 {
-    int n,r,rev=0,s;
+    int n;
     scanf("%d",&n);
-    int x=palin(n,r,rev,s);
-}
-int palin(int n,int r,int rev,int s)
-{
-     s=n;
-    while(n!=0)
+    int rev=0,temp=n;
+    while(n)
     {
-        r=n%10;
-        rev=rev*10+r;
+        int rem=n%10;
+        rev=(rev*10)+rem;
         n=n/10;
     }
-    if(s==rev)
-    printf("Palindrome");
+    if(temp==rev)
+    {
+        printf("True");
+    }
     else
-    printf("Not Palindrome");
-    return 0;
+    {
+        printf("False");
+    }
 }
